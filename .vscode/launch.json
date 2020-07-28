@@ -10,17 +10,6 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
-        },
-        {
-            "name": "(Windows) Launch",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/thing.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false
-        },
+        }
     ]
 }

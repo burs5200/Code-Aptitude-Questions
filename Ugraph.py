@@ -3,6 +3,8 @@ Written By Austin Bursey
 Created On: 7/1/2020
 Updated On: 7/3/2020
 '''
+import sys 
+print(sys.version)
 import numpy as np 
 class GNode: 
     def __init__(self,data) : 
@@ -16,7 +18,13 @@ class Graph :
         self.edges = {}
         for vertex in vertices : 
             self.edges[vertex] = None 
+    def get_first_adj_list(self):
 
+        return self.edges[self.vertices[0]]
+
+    def get_vertex_adj_list(self,i):
+        return self.edges[i]
+        
     def add_edge(self, start, dest ) : 
         endNode = GNode(dest) 
         strtNode = GNode(start)
